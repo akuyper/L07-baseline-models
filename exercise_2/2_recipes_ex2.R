@@ -10,7 +10,7 @@ library(here)
 tidymodels_prefer()
 
 # load training data ----
-load(here("L07_baseline_models/exercise_2/data_splits/titanic_train.rda"))
+load(here("exercise_2/data_splits/titanic_train.rda"))
 
 # build lm recipe ----
 titanic_recipe_lm <- recipe(survived ~ ., data = titanic_train) |> 
@@ -52,8 +52,8 @@ titanic_recipe_tree |>
 
 
 # write out recipe(s) ----
-save(titanic_recipe_lm, file = here("L07_baseline_models/exercise_2/recipes/titanic_recipe_lm.rda"))
-save(titanic_recipe_tree, file = here("L07_baseline_models/exercise_2/recipes/titanic_recipe_tree.rda"))
+save(titanic_recipe_lm, file = here("exercise_2/recipes/titanic_recipe_lm.rda"))
+save(titanic_recipe_tree, file = here("exercise_2/recipes/titanic_recipe_tree.rda"))
 
 
 

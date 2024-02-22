@@ -10,7 +10,7 @@ library(here)
 tidymodels_prefer()
 
 # load training data ----
-load(here("L07_baseline_models/exercise_1/data_splits/abalone_train.rda"))
+load(here("exercise_1/data_splits/abalone_train.rda"))
 
 # build lm recipe ----
 abalone_recipe_lm <- recipe(age ~ ., data = abalone_train) |> 
@@ -48,8 +48,8 @@ abalone_recipe_tree |>
 
 
 # write out recipe(s) ----
-save(abalone_recipe_lm, file = here("L07_baseline_models/exercise_1/recipes/abalone_recipe_lm.rda"))
-save(abalone_recipe_tree, file = here("L07_baseline_models/exercise_1/recipes/abalone_recipe_tree.rda"))
+save(abalone_recipe_lm, file = here("exercise_1/recipes/abalone_recipe_lm.rda"))
+save(abalone_recipe_tree, file = here("exercise_1/recipes/abalone_recipe_tree.rda"))
 
 
 
