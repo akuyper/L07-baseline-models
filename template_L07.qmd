@@ -2,23 +2,25 @@
 title: "L07 Baseline Models"
 subtitle: "Data Science 2 with R (STAT 301-2)"
 author: "YOUR NAME"
+pagetitle: "L06 YOUR NAME"
 date: today
 
 format:
   html:
+    theme: cosmo
     toc: true
     toc-depth: 4
+    toc-location: left
     embed-resources: true
-    code-fold: show
+    code-fold: false
     link-external-newwindow: true
-    
+
 execute:
   warning: false
-  
-from: markdown+emoji
 
+from: markdown+emoji
 reference-location: margin
-citation-location: margin
+citation-location: margin   
 ---
 
 ::: {.callout-tip icon="false"}
@@ -106,19 +108,19 @@ It is always useful to have a sense of how many models where included in the mod
 
 
 | Model Type          | Number of models | Total number of trainings^[Number of times a training process must be completed] |
-|---------------------|-----------------:|--------------------------:|
-| Linear model        |                  |                           |
-| Elastic net         |                  |                           |
-| K-nearest neighbors |                  |                           |
-| Random forest       |                  |                           |
-| Boosted tree        |                  |                           |
-| **Total**           |                  |                           |
+|:---------------------|-----------------:|--------------------------:|
+| Linear model         |                  |                           |
+| Elastic net          |                  |                           |
+| K-nearest neighbors  |                  |                           |
+| Random forest        |                  |                           |
+| Boosted tree         |                  |                           |
+| **Total**            |                  |                           |
 
 : Model Training Totals for Regression Problem {#tbl-mod-totals-reg .striped .hover}
 
 ##### Part C
 
-Suppose each linear, elastic net, and nearest neighbor model takes 2 seconds to fit, while each random forest and boosted tree model takes 6 seconds. About how many minutes^[Report in additional unit(s) of time, if it would be more useful/impactful.] would it take to train all the models given the breakdown in @tbl-mod-totals-reg --- assuming we fit one model after the other (meaning fit sequentially)? 
+Suppose each linear, elastic net, and nearest neighbor model takes 2 seconds to fit, while each random forest and boosted tree model takes 6 seconds.[^1] About how many minutes^[Report in additional unit(s) of time, if it would be more useful/impactful.] would it take to train all the models given the breakdown in @tbl-mod-totals-reg --- assuming we fit one model after the other (meaning fit sequentially)? 
 
 ::: {.callout-tip icon="false"}
 ## Solution
@@ -136,9 +138,7 @@ YOUR SOLUTION HERE
 
 :::
 
-:::{.callout-note}
-The time it takes to fit each model is hypothetical and does not reflect how long it really took to complete this process.
-:::
+[^1]: The time it takes to fit each model is hypothetical and does not reflect how long it really took to complete this process.
 
 #### Task 2
 
@@ -227,7 +227,7 @@ Train the best model on the entire training dataset. Assess the model's performa
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE --- suggets arranging assessment measures in a table for display; no code should be seen or accessible.
+YOUR SOLUTION HERE --- suggest arranging assessment measures in a table for display; no code should be seen or accessible.
 
 :::
 
@@ -304,19 +304,19 @@ YOUR SOLUTION HERE
 It is always useful to have a sense of how many models where included in the model comparison stage --- especially when considering computational resources. Having it broken down by type lets us know which model types were considered and the number of submodels hint at how thorough each model type was explored. Fill in the missing values in @tbl-mod-totals-class.
 
 | Model Type          | Number of models | Total number of trainings^[Number of times a training process must be completed] |
-|---------------------|-----------------:|--------------------------:|
-| Logistic model      |                  |                           |
-| Elastic net         |                  |                           |
-| K-nearest neighbors |                  |                           |
-| Random forest       |                  |                           |
-| Boosted tree        |                  |                           |
-| **Total**           |                  |                           |
+|:---------------------|-----------------:|--------------------------:|
+| Logistic model       |                  |                           |
+| Elastic net          |                  |                           |
+| K-nearest neighbors  |                  |                           |
+| Random forest        |                  |                           |
+| Boosted tree         |                  |                           |
+| **Total**            |                  |                           |
 
 : Model Training Totals for Classification Problem {#tbl-mod-totals-class .striped .hover}
 
 ##### Part C
 
-Suppose each logistic, elastic net, and nearest neighbor model takes 1 second to fit, while each random forest and boosted tree model takes 4 seconds. About how many minutes^[Report in additional unit(s) of time, if it would be more useful/impactful.] would it take to train all the models given the breakdown in @tbl-mod-totals-class --- assuming we fit one model after the other (meaning fit sequentially)? 
+Suppose each logistic, elastic net, and nearest neighbor model takes 1 second to fit, while each random forest and boosted tree model takes 4 seconds.[^1] About how many minutes^[Report in additional unit(s) of time, if it would be more useful/impactful.] would it take to train all the models given the breakdown in @tbl-mod-totals-class --- assuming we fit one model after the other (meaning fit sequentially)? 
 
 ::: {.callout-tip icon="false"}
 ## Solution
