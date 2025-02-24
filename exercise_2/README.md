@@ -16,6 +16,6 @@
 
 ### Directories
 
-- [`data_splits/`](exercise_2/data_splits/): contains setup of data: initial split, resamples, & controls for fitting to resamples 
-- [`recipes/`](exercise_2/recipes/): contains all preprocessing/feature engineering objects
-- [`results/`](exercise_2/results/): contains results from training/fitting models to resamples
+- [`data_splits/`](data_splits/): contains setup of data: initial split, resamples, & controls for fitting to resamples 
+- [`recipes/`](recipes/): contains all preprocessing/feature engineering objects
+- [`results/`](results/): contains results from training/fitting models to resamples
